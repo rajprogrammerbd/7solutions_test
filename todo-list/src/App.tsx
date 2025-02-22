@@ -45,13 +45,13 @@ function App() {
 
   return (
     <div className="w-full h-auto flex items-center justify-center">
-      <div className="sm:w-[90%] xl:w-[80%] h-full w-full mt-5 2xl:max-w-[1400px] grid grid-cols-3 grid-rows-[600px] gap-10">
+      <div className="sm:w-[90%] xl:w-[80%] h-full w-full mt-5 2xl:max-w-[1400px] grid grid-cols-3 grid-rows-[600px] gap-3 sm:gap-10">
         <div className="flex flex-col gap-5">
           {allItems.map((item) => (
             <div
               key={item.name}
               onClick={() => handleAddItem(item)}
-              className="w-full h-10 border-1 border-gray-200 scale-[1] hover:scale-[1.02] rounded-md border-solid flex items-center justify-center text-xl cursor-pointer shadow-sm hover:bg-gray-700 hover:text-white transition-all duration-300"
+              className="w-full h-10 border-1 border-gray-200 scale-[1] hover:scale-[1.02] rounded-md border-solid flex items-center justify-center text-sm sm:text-xl cursor-pointer shadow-sm hover:bg-gray-700 hover:text-white transition-all duration-300"
             >
               {item.name}
             </div>
@@ -65,7 +65,7 @@ function App() {
             <div
               key={item.name}
               onClick={() => handleRemoveItem(item)}
-              className="w-[80%] h-10 border-1 border-gray-200 rounded-md border-solid flex items-center justify-center text-xl cursor-pointer shadow-sm mb-5 last:mb-0"
+              className="w-[80%] h-10 border-1 border-gray-200 rounded-md border-solid flex items-center justify-center text-sm sm:text-xl cursor-pointer shadow-sm mb-5 last:mb-0"
             >
               {item.name}
             </div>
@@ -79,7 +79,7 @@ function App() {
             <div
               key={item.name}
               onClick={() => handleRemoveItem(item)}
-              className="w-[80%] h-10 border-1 border-gray-200 rounded-md border-solid flex items-center justify-center text-xl cursor-pointer shadow-sm mb-5 last:mb-0"
+              className="w-[80%] h-10 border-1 border-gray-200 rounded-md border-solid flex items-center justify-center text-sm sm:text-xl cursor-pointer shadow-sm mb-5 last:mb-0"
             >
               {item.name}
             </div>
